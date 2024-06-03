@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@600;800&family=Poetsen+One&family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@700&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>TODO LIST</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <h1>My Todo List</h1>
+    </header>
+    <!-- header end -->
+    <!-- todo input start -->
+    <form>
+      <div class="todo-input">
+        <input class="todo-in" type="text" />
+        <button class="input-button">
+          <i class="fa-regular fa-calendar-plus"></i>
+        </button>
+      </div>
+    </form>
+    <!-- todo input end -->
+
+    <!-- start of todo list -->
+    <section class="todo-contianer">
+      <ul class="todo-list">
+        <!-- list item -->
+
+        <!-- <div class="todo">
+          <li>listgenkejrdghjkdhskjs</li>
+          <div class="button-continer">
+            <button class="check-btn">
+              <i class="fa-solid fa-circle-check"></i>
+            </button>
+            <button class="trash-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div> -->
+
+        <!-- list item end -->
+      </ul>
+    </section>
+    <footer>
+      <div class="footer-div">
+        <button class="all-filter">
+          <i class="fas fa-list"></i>
+        </button>
+        <button class="completed-filter">
+          <i class="fas fa-check"></i>
+        </button>
+        <button class="remaining-filter">
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </button>
+      </div>
+    </footer>
+    <!-- end of todo list -->
+    <script src="script.js"></script>
+  </body>
+</html>

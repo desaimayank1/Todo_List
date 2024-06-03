@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 2rem;
+  background: linear-gradient(120deg, #e35f00, rgb(238, 203, 47), #fbfad1cc);
+  min-height: 100vh;
+}
+
+header {
+  color: rgb(217, 237, 243);
+  text-align: center;
+  padding: 30px 0px;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  min-height: 15vh;
+}
+
+form button {
+  background-color: rgb(248, 103, 81);
+  color: white;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.todo-input input,
+.input-button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 0.3rem;
+}
+
+.todo-contianer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+  min-width: 30vw;
+  padding: 0.3rem;
+  margin-bottom: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-list {
+    list-style: none;
+    min-width: 60vw;
+  }
+}
+
+.todo {
+  margin: 0.5rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.todo li {
+  padding: 0.3rem;
+}
+
+.todo button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: 0;
+}
+
+.button-continer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.check-btn {
+  background-color: rgb(41, 229, 41);
+  color: white;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  background-color: rgb(238, 47, 37);
+  color: white;
+  font-size: 1rem;
+}
+
+.mark-complete {
+  text-decoration: line-through;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  border-top: 3px solid black;
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+}
+
+.footer-div {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  footer div {
+    width: 40vw;
+  }
+}
+footer button {
+  padding: 0.7rem;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 0.3rem;
+  border: 0;
+}
+
+.completed-filter {
+  background-color: rgb(41, 229, 41);
+}
+
+.all-filter {
+  background-color: rgb(84, 84, 227);
+}
+
+.remaining-filter {
+  background-color: rgb(238, 47, 37);
+}
